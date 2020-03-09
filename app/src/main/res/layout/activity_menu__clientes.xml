@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    tools:context=".Menu_Clientes">
+
+
+    <!-- BARRA TOPO COM BOTÃO PARA VOLTAR-->
+
+
+    <!--Barra de informação -->
+
+
+    <androidx.appcompat.widget.Toolbar
+
+
+        android:id="@+id/toolbar_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_light"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".custom_toolbar_activity">
+
+
+        <!-- TEXTO DA BARRA -->
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="@string/Clientes"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <!-- INCOMPLETO (botao) NÃO FAZER ALTERAÇÕES ATE FINALIZAR BASE DE DADOS -->
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/search_button"
+            android:drawableLeft="@android:drawable/ic_menu_search"
+            android:drawablePadding="15dp"
+            android:hint="Pesquisa"
+            android:padding="16dp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+
+        android:id="@+id/clientes_custom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/toolbar_activity"
+        android:elevation="10dp"
+        android:orientation="horizontal">
+
+
+        <!-- Texto ID -->
+
+        <TextView
+            android:id="@+id/clienteID"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lines="@android:integer/config_shortAnimTime"
+            android:text="@string/ID"
+            android:textColor="@color/black"
+            tools:ignore="MissingConstraints" />
+
+
+        <!-- Texto Nome -->
+
+        <TextView
+            android:layout_width="59dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center_vertical"
+            android:text="@string/Nome"
+            android:textColor="@color/black" />
+
+
+        <!-- Texto Opções -->
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/Opcao"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="330dp">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+
+    <!-- Linha dos botões -->
+
+
+    <!-- BOTÃO DE ACRESCENTAR CANTO DIREITO -->
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/clientes_custom"
+        android:orientation="horizontal"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/confirmar"
+        android:layout_width="54dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/add"
+        app:backgroundTint="@color/white"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</RelativeLayout>

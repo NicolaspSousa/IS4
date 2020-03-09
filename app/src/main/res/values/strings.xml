@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Jetpack teste</string>
+    <string name="title_nome">Informática e Serviços, LDA.</string>
+    <string name="Clientes">Clientes</string>
+    <string name="Ferramentas">Ferramentas</string>
+    <string name="ID">   ID   </string>
+    <string name="Nome">Nome</string>
+    <string name="Opcao">Opções</string>
+    <string name="title_activity_teste">teste</string>
+    <string name="title_activity_create_clients_upd">create_clients_upd</string>
+</resources>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+
+
+
+    <!--chama a toolbar da outra layout -->
+    <include layout="@layout/custom_toolbar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/toolbar"/>
+
+
+
+
+
+
+
+
+
+    <!-- Parte do recyclerview , localiza-se em baixo da toolbar -->
+
+
+
+
+
+
+    <GridLayout
+
+        android:columnCount="1"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="14dp">
+
+
+    <!-- Linha 1 -->
+    <!-- Coluna 1 -->
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:paddingTop="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="20dp"
+            android:layout_rowWeight="3"
+            android:elevation="15dp"
+            android:layout_marginBottom="15dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@color/white"
+            >
+
+            <RelativeLayout
+                android:id="@+id/menu1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+
+                <ImageView
+                    android:scaleType="fitXY"
+
+                    android:background="@drawable/shadow"
+                    android:src="@drawable/menu1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:layout_rowWeight="3"
+            android:elevation="16dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="20dp"
+            android:layout_marginBottom="15dp">
+
+            <RelativeLayout
+                android:id="@+id/menu2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/menu2" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:paddingTop="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp"
+            android:layout_rowWeight="3"
+            android:elevation="16dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginBottom="15dp"
+            app:cardBackgroundColor="@color/white">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+
+                 <ImageView
+                     android:id="@+id/menu3"
+                    android:background="@drawable/shadow"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/menu3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </GridLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

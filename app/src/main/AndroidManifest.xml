@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.jetpackteste">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label=""
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+
+        <activity
+            android:name=".create_cliente_upd"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".Menu_Clientes"/>
+
+
+
+
+        <activity android:name=".create_artigo2" />
+
+
+
+        <activity
+            android:name=".create_artigo"
+            android:parentActivityName=".Menu_Opcoes" />
+
+
+
+        <activity
+            android:name=".create_clients"
+            android:parentActivityName=".Menu_Clientes">
+
+            <!--
+        Este comando faz com que na toolbar o botão voltar funcione , PS: sempre que for colocar o atributo ,
+        colocar o layout para onde quer voltar
+            -->
+
+        </activity> <!-- MENU DAS OPÇÕES ATIVIDADES -->
+        <activity
+            android:name=".Menu_Opcoes"
+            android:parentActivityName=".MainActivity" /> <!-- MENU DOS CLIENTES ATIVIDADES -->
+        <activity
+            android:name=".Menu_Clientes"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".Menu_comida" />
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTop"> <!-- Mantém a página ativa em segundo plano~ -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

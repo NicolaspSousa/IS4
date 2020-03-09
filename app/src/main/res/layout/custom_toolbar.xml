@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    app:popupTheme="@style/AppTheme"
+    android:id="@+id/toolbar"
+    app:civ_border_color="@color/blue">
+
+
+
+    <!-- Configuração do circulo e logo -->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="3dp"
+        android:id="@+id/logo"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/logo"
+        app:civ_border_width="0dp"
+        />
+
+
+
+
+    <!--Texto da barra -->
+
+    <TextView
+        android:id="@+id/title_logo"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:text="@string/title_nome"
+        android:textColor="@color/blue"
+        android:gravity="center_vertical"/>
+
+
+
+
+
+
+
+</androidx.appcompat.widget.Toolbar>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context="com.example.jetpackteste.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <!--Menu 1 -->
+    <RelativeLayout
+        android:id="@+id/menu1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:layout_weight="0.33">
+
+        <ImageView
+            android:id="@+id/imagem1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/menu1"/>
+    </RelativeLayout>
+
+
+
+
+
+
+    <!--Menu 2 -->
+
+    <RelativeLayout
+        android:id="@+id/menu2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:layout_weight="0.3">
+
+        <ImageView
+            android:id="@+id/imagem2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/menu2"/>
+    </RelativeLayout>
+
+
+
+
+
+
+    <!-- Menu 3 -->
+
+    <RelativeLayout
+        android:id="@+id/imagem3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:layout_weight="0.33">
+
+        <ImageView
+            android:id="@+id/menu3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/menu3" />
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

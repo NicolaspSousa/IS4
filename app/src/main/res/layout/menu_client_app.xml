@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height= "50dp"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    android:id="@+id/info_view">
+
+
+
+
+
+    <!-- LAYOUT PARA VISUALIZAÇÃO DA LISTA MENU_CLIENTES -->
+
+
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/IDcliente_view"
+                android:layout_width="84dp"
+                android:layout_height="34dp"
+                android:layout_marginLeft="5dp"
+
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textColor="@color/black" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/Name_view"
+                android:layout_width="247dp"
+                android:textSize="20dp"
+                android:layout_height="34dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/black" />
+
+            <Button
+
+                android:layout_width="32dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/ic_arrow">
+
+            </Button>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
